@@ -1,4 +1,5 @@
 import React from 'react';
+import instagramResponse from '../photos';
 
 const Gallery = () => (
     
