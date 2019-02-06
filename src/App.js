@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import instagramResp from './picture.js'
+import InstagramResp from './picture.js'
 
 class App extends Component {
   render() {
@@ -21,8 +21,12 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <div>
-          {/* <instagramResp /> */}
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <InstagramResp />
+            </div>
+          </div>
         </div>
       </div>
     );
