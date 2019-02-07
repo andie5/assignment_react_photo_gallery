@@ -1,30 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import InstagramResp from './picture.js'
+import PhotoCollection from './PhotoCollection'
+import instagramResponse from './photos.js'
+// const instagramResponse = require('./photos');
 
 class App extends Component {
   render() {
+    console.log("instagramResp", instagramResponse)
+    console.log("instaa1", instagramResponse['data'])
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          Welcome to my Photo Gallery
         </header>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <InstagramResp />
+        <div className="container">
+          <div className="row">
+            <div className="col-sm">
+            
+              <PhotoCollection peoplePhotos={instagramResponse} />
             </div>
           </div>
         </div>

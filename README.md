@@ -3,7 +3,7 @@ Search and sort images using React
 
 [An HTML5, React, CSS, Bootstrap Project from the Viking Code School](http://www.vikingcodeschool.com)
 
-Andrea A
+[Andrea A](https://github.com/andie5)
 
 
 
