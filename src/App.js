@@ -12,10 +12,7 @@ class App extends Component {
         </header>
         <div className="container">
           <div className="row">
-            {/* <div className="col-sm"> */}
-            
-              <PhotoCollection peoplePhotos={instagramResponse} />
-            {/* </div> */}
+            <PhotoCollection peoplePhotos={instagramResponse} />
           </div>
         </div>
       </div>
