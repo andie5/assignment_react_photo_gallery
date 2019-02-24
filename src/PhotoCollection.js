@@ -8,6 +8,9 @@ const PhotoCollection = ({peoplePhotos}) => {
     const photos = peoplePhotos.data.map((personPhoto) => (
         <PhotoCard username={personPhoto.user.username} 
             postedTime={personPhoto.created_time}
+            photoImage={personPhoto.link}
+            likes={personPhoto.likes.count}
+            comments={personPhoto.comments.count}
             key={personPhoto.user.username} 
         />
     ));
