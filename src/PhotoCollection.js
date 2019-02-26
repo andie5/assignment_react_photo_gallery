@@ -13,10 +13,9 @@ const PhotoCollection = ({peoplePhotos}) => {
         />
     ));
 
-    let content = [];
-    photos.map((photo, i) => {
+    const content = photos.map((photo, i) => {
         if((i+1) % 4 === 0){ 
-          content.push(
+          return (
             <div className="row" key={photo.username}>       
               <div className="col-md-3">
                 {photo}
@@ -24,9 +23,11 @@ const PhotoCollection = ({peoplePhotos}) => {
             </div>
           )
         }else{
-            content.push(<div className="col-md-3">{photo}</div>);
+          return (<div className="col-md-3">{photo}</div>);
         }
     });
+
+
 
     return(
         <div className="PhotoCollection">
